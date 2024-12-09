@@ -8,7 +8,7 @@ using VO;
 
 namespace Capa_acceso_datos
 {
-    internal class DAL_Camiones
+    public class DAL_Camiones
     {
         ///create 
         ///Read
