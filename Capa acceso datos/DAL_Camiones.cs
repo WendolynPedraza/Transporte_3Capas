@@ -13,7 +13,7 @@ namespace Capa_acceso_datos
     public class DAL_Camiones
     {
         ///create 
-        public static string accion_camion(Camiones_VO camion)
+        public static string Insertar_camion(Camiones_VO camion)
         {
             string salidas = "";
             int respuesta = 0;
@@ -118,6 +118,7 @@ namespace Capa_acceso_datos
             {
                 salida = $"Error: {e.Message}";
             }
+            return salida;
         }
     }
 }
