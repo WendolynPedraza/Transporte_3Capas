@@ -20,8 +20,8 @@ namespace Capa_acceso_datos
         //se habilitan los campos de:
         //User=;
         //password=;
-        static string _CadenaConexion = @"Data Sourse= DESKTOP-GGDL61L; 
-                                                Initial Catalog = Transportes; 
+        static string _CadenaConexion = @"Data Source= DESKTOP-GGDL61L; 
+                                                Initial Catalog = transportes; 
                                                 Integrated Security=true;";
 
         //Encapsulamiento
