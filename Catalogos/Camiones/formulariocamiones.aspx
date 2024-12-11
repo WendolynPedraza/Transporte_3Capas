@@ -46,6 +46,8 @@
 
                     <asp:Label ID="lblurlfoto" runat="server" Text="Foto"></asp:Label>
 
+
+
                     <asp:Image ID="imgfoto" Width="100" Height="100" runat="server" />
                     <asp:Image ID="imgcamion" Width="100" Height="100" runat="server" />
 

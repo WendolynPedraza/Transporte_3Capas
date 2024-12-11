@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Configuration;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -32,6 +33,22 @@ namespace Transporte_3Capas.Catalogos.Camiones
 
         protected void GVCamiones_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
+            //recuro el id del renglon afectado
+            int id_camion = int.Parse(GVCamiones.DataKeys[e.RowIndex].Values["ID_Camion"].ToString());
+            string respuesta = BLL_Camiones.eliminar_Camion(id_camion);
+            string titulo, msg, tipo;
+            if (respuesta.ToUpper().Contains("Error"))
+            {
+                titulo = "Error";
+                msg = respuesta;
+                tipo = "error";
+            }
+            else
+            {
+                titulo = "Correcto";
+                msg = respuesta;
+                tipo = "success";
+            }
 
         }
 
