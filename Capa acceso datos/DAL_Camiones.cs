@@ -73,6 +73,7 @@ namespace Capa_acceso_datos
             try
             {
                 respuesta = metodos_datos.execute_nonQuery("SP_Actualizar_Camiones",
+                    "@Id", camion.ID_Camion,
                     "@Matricula", camion.Matricula,
                     "@Tipo_Camion", camion.Tipo_Camion,
                     "@Marca", camion.Marca,

@@ -12,7 +12,7 @@
         <div class="row">
     <asp:GridView ID="GVCamiones" runat="server" CssClass="table table-bordered table-bordered table-condensed"
         AutoGenerateColumns="false"
-        DataKeyName="ID_Camion"
+        DataKeyNames="ID_Camion"
         OnRowDeleting="GVCamiones_RowDeleting"
         OnRowCommand="GVCamiones_RowCommand"
         OnRowEditing="GVCamiones_RowEditing"

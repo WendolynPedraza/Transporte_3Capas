@@ -30,7 +30,7 @@ namespace VO
         public string Modelo { get => _modelo; set => _modelo = value; }
         public int Capacidad1 { get => _capacidad; set => _capacidad = value; }
         public double Kilometraje { get => _kilometraje; set => _kilometraje = value; }
-        public string UrlFoto { get => _urlFoto; set => UrlFoto = value; }
+        public string UrlFoto { get => _urlFoto; set => _urlFoto = value; }
         public bool Disponibilidad { get => _Disponibilidad; set => _Disponibilidad = value; }
 
 
