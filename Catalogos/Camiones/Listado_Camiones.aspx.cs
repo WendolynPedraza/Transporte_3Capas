@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BLL;
+using Transporte_3Capas.Utilidades;
 
 namespace Transporte_3Capas.Catalogos.Camiones
 {
@@ -49,7 +50,8 @@ namespace Transporte_3Capas.Catalogos.Camiones
                 msg = respuesta;
                 tipo = "success";
             }
-
+            //sweetAler
+            sweetAlert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType());
         }
 
         protected void GVCamiones_RowCommand(object sender, GridViewCommandEventArgs e)

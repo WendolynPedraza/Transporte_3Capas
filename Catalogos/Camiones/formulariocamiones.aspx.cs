@@ -93,7 +93,7 @@ namespace Transporte_3Capas.Catalogos.Camiones
                 }
             }else
             {
-                //Sweet Alert
+                Utilidades.sweetAlert(Titulo, respuesta, lbltipo, this.Page, this.GetType(), "/catalogos/camiones/Listado_Camiones.aspx");
             }
         }
 
